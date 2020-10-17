@@ -1,0 +1,62 @@
+h2 {
+    font-size: 50px;
+    color: brown;
+    text-align: center;
+}
+
+img {
+    height: 500px;
+   width: 49%;
+   
+}
+
+p {
+    text-indent: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    letter-spacing: 1,5px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.recipe-panakota {
+    text-align: center;
+    text-shadow: 2px 2px 3px brown;
+    font-size: 30px;
+    color:rgba(128, 42, 165, 0.851);
+}
+
+
+.table-panakota {
+    width: 50%;
+    text-align: center;
+}
+
+td {
+    background-color: lightgrey;
+}
+
+.topping {
+    width: 200px;
+    border: 1px solid gold;
+}
+
+.topping h3 {
+text-align: center;
+}
+
+.img-chia {
+    display: block;
+    margin: auto;
+}
+
+.chia {
+    font-size: larger;
+    line-height: 30px;
+    margin: 30px;
+    text-align: justify;
+    background-color: lightyellow;
+}
+
+.chia-list1 {
+    font-style: oblique;
+}
