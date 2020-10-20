@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 4px;
+    font-size: x-large;
+}
+
+.header {
+    background-color: red;
+    width: 100%;
+    height: 150px;
+}
+
+.head {
+    background-color: blue;
+    width: 90%;
+    height: 70px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.navigation {
+    background-color: black;
+    width: 80%;
+    height: 40px;
+    top: 15px;
+    left: 10%;
+    position: absolute;
+}
+
+.menu {
+    background-color: black;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.red {
+    background-color: red;
+    height: 70px;
+    width: 25%;
+    float: left;
+}
+
+.green {
+    background-color: green;
+    height: 70px;
+    width: 25%;
+    float: left;
+}
+
+.grey {
+    background-color: grey;
+    height: 70px;
+    width: 25%;
+    float: left;
+}
+
+.yellow {
+    background-color: yellow;
+    height: 70px;
+    width: 25%;
+    float: left;
+}
+
+.black-line {
+    background-color: black;
+    width: 100%;
+    height: 10px;
+    float: left;
+    clear: both;
+}
+
+.left-block {
+    float: left;
+    background-color: grey;
+    height: 350px;
+    width: calc(100%/3);
+    overflow: hidden;
+}
+
+.sub-left {
+    background-color: pink;
+    width: 80%;
+    height: 80px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 80px;
+    overflow: inherit;
+}
+
+.a-sub-left {
+    background-color: blue;
+    width: 40%;
+    height: 80px;
+    float: left;
+    margin-left: 10%;
+    overflow: inherit;
+}
+
+.b-sub-left {
+    background-color: black;
+    width: 40%;
+    height: 80px;
+    float: left;
+    overflow: inherit;
+}
+
+.center-block {
+    float: left;
+    background-color: yellow;
+    height: 350px;
+    width: calc(100%/3);
+    position: relative;
+    overflow: hidden;
+}
+
+.a-center-red {
+    width: calc(100%/3);
+    background-color: red;
+    height: 280px;
+    position: absolute;
+    bottom: 0px;
+    overflow: inherit;
+}
+
+.a-center-green {
+    width: calc(100%/3);
+    background-color: green;
+    height: 280px;
+    position: absolute;
+    bottom: 0px;
+    left: calc(100%/3);
+    overflow: inherit;
+}
+
+.a-center-green-blue {
+    background-color: blue;
+    height: 70%;
+    width: 50%;
+    float: left;
+    margin-top: 10%;
+    overflow: inherit;
+}
+
+.a-center-green-black {
+    background-color: black;
+    height: 60%;
+    width: 50%;
+    float: left;
+    margin-top: 20%;
+    overflow: inherit;
+}
+
+.a-center-grey {
+    width: calc(100%/3);
+    background-color: grey;
+    height: 280px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    overflow: inherit;
+}
+
+.right-block {
+    float: left;
+    background-color: blue;
+    height: 350px;
+    width: calc(100%/3);
+    overflow: hidden;
+    position: relative;
+}
+
+.sub-right {
+    background-color: green;
+    height: 250px;
+    width: calc(100%/3);
+    overflow: inherit;
+    position: absolute;
+    bottom: 0px;
+}
+
+.a-sub-right {
+    background-color: yellow;
+    height: 250px;
+    width: calc(100%/3);
+    overflow: inherit;
+    position: absolute;
+    left: calc(100%/3);
+    bottom: 15px;
+}
+
+.b-sub-right {
+    background-color: red;
+    height: 250px;
+    width: calc(100%/3);
+    overflow: inherit;
+    position: absolute;
+    right: 0px;
+    bottom: 25px;
+}
+
+.text-pink {
+    background-color: pink;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+.text-blue {
+    background-color: blue;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    float: left;
+    clear: both;
+}
