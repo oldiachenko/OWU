@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu>ul {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    font-weight: bolder;
+    flex-wrap: wrap;
+}
+
+.menu>ul>li {
+    padding-right: 10px;
+}
+
+.menu>ul>li:first-child {
+    color: brown;
+}
+
+.menu1 {
+    font-size: 12px;
+}
+
+.menu2 {
+    font-size: 15px;
+}
+
+.headLogo {
+    background-color: brown;
+    height: 100px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    font-size: 30px;
+}
+
+.allSections {
+    text-align: center;
+    z-index: 2;
+    margin-left: 40px;
+    font-size: small;
+    width: 200px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    z-index: 2;
+    text-align: center;
+    font-size: small;
+}
+
+.lang {
+    margin-right: 60px;
+}
+
+.club {
+    margin-right: 40px;
+}
