@@ -200,11 +200,57 @@ console.log(number1);
 console.log(number2);
 console.log(number3);
 
-// Задание 8 - не проходили
-// Задание 9 - не проходили
-// Задание 10 - не проходили
-// Задание 11 - не проходили
-// Задание 12 - не проходили
+// Задание 8
+
+let number11 = prompt('Enter first number');
+let number22 = prompt('Enter second number');
+let number33 = prompt('Enter third number');
+let number44 = prompt('Enter fourth number');
+
+let result =
+  parseInt(number11) +
+  parseInt(number22) +
+  parseInt(number33) +
+  parseInt(number44);
+console.log(result);
+
+// Задание 9
+
+let number111 = prompt('Ввести число с плавающей точкой');
+let number222 = prompt('Ввести число с плавающей точкой');
+let number333 = prompt('Ввести число с плавающей точкой');
+
+console.log(parseFloat(number111));
+
+let result1 =
+  parseFloat(number111) + parseFloat(number222) + parseFloat(number333);
+console.log(result1);
+
+// Задание 10
+
+let result2 =
+  Math.round(number111) + Math.round(number222) + Math.round(number333);
+console.log(result2);
+
+// Задание 11
+
+let number6 = +prompt('Ввести целое чило');
+let number7 = +prompt('Ввести целое чило');
+
+console.log(Math.pow(number6, number7));
+
+// Задание 12
+
+let a12 = 100;
+let b12 = '100';
+let c12 = true;
+let d12 = undefined;
+ 
+console.log(typeof a12);
+console.log(typeof b12);
+console.log(typeof c12);
+console.log(typeof d12);
+
 
 // Задание 13
 
