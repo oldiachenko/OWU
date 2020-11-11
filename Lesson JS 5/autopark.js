@@ -26,7 +26,7 @@ let kia = new CarNew('kia', 120, 'Anton', 35, 15, 15000, 2019);
 // Зробити половині автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
 
 function engineRepaire (car) {
-  car.engine *= 1.1;
+  car.engine = Math.round(car.engine *= 1.1);
 }
 
 

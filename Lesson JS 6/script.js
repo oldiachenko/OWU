@@ -46,7 +46,7 @@ console.log(filterMultipleTen);
 // -- перебрать (проитерировать) массив при помощи foreach()
 
 numbers.forEach((value) => {
-console.log(numbers)
+  console.log(numbers);
 });
 
 // -- перебрать массив при помощи map() и получить новый массив в котором все значения будут в 3 раза больше
@@ -322,7 +322,7 @@ console.log(carsPowerSubaru);
 
 // - мотор серіі ej
 
-let carsEngine = cars.filter((value) => value.engine.includes('ej'));
+let carsEngine = cars.filter((value) => value.engine.startsWith('ej'));
 console.log(carsEngine);
 
 // - сили більше ніж 300 + виробник субару + мотор серіі ej
@@ -331,7 +331,7 @@ let carPowerProducerEngine = cars.filter(
   (value) =>
     value.power > 300 &&
     value.producer === 'subaru' &&
-    value.engine.includes('ej')
+    value.engine.startsWith('ej')
 );
 console.log(carPowerProducerEngine);
 
@@ -538,6 +538,16 @@ let arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14];
 
 let key = 4;
 
+function minMax (array, n) {
+  return array.indexOf(n) === -1
+    ? -1
+    : `MinIndex = ${array.indexOf(n)}, MaxIndex = ${array.lastIndexOf(n)}`;
+}
+
+console.log(minMax(arr, key))
+
+//----------
+
 let minIndex = arr.indexOf(key);
 let maxIndex = arr.lastIndexOf(key);
 console.log(`MinIndex = ${minIndex}, MaxIndex = ${maxIndex}`);
@@ -547,13 +557,11 @@ console.log(`MinIndex = ${minIndex}, MaxIndex = ${maxIndex}`);
 let minIndex2 = arr.findIndex((value) => value === key);
 
 let maxIndex2;
-for (let i = arr.length-1; i>=0; i--) {
+for (let i = arr.length - 1; i >= 0; i--) {
   if (arr[i] === key) {
-      maxIndex2 = i
-      break
-  } else (
-    maxIndex2 = -1
-  )
+    maxIndex2 = i;
+    break;
+  } else maxIndex2 = -1;
 }
 
 console.log(`MinIndex = ${minIndex2}, MaxIndex = ${maxIndex2}`);
