@@ -22,7 +22,25 @@ console.log(flat(array1));
 // Cоздать функцию которая принимает число и возвращает  текст как в примере:
 // 3275  —>  "3000 + 200 + 70 +5"
 
-// ????????????
+
+
+function numberToText(number) {
+  let arrayN = [];
+  let str = '';
+  while (number) {
+    arrayN.push(number % 10);
+    number = Math.floor(number / 10);
+  }
+for (let i = arrayN.length-1 ; i >= 0; i--) {
+  const tmp = arrayN[i] * (10 ** i);
+str += i === 0 ? tmp : tmp + ' + ';
+}
+return str
+}
+
+
+console.log(numberToText(3275))
+
 
 // -------------------------
 // Знайти набільший елемент в масиві за допомогою reduce
@@ -30,9 +48,7 @@ console.log(flat(array1));
 
 let arrReduce = [1, 6, 9, 0, 17, 88, 4, 7];
 
-let reduce = arrReduce.reduce((acc, value) =>
-  value > acc ? (acc = value) : acc
-);
+let reduce = arrReduce.reduce((acc, value) => (value > acc ? value : acc));
 console.log(reduce);
 
 // -------------------------
@@ -41,21 +57,36 @@ console.log(reduce);
 
 // 2176491947586100 -> 3
 
-function count(numbers, key) {
-  let numbersArr = [];
-  let keyCount = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    numbersArr.push(numbers.charAt(i));
-  }
-  numbersArr.forEach((value) => {
-    if (value == key) {
-      ++keyCount;
-    }
+function count1(string, number) {
+  let doubleZero = string.indexOf('00');
+  let stringArr = string.split('');
+  stringArr.splice(doubleZero, stringArr.length - doubleZero);
+
+  let count1 = 0;
+
+  stringArr.forEach((value) => {
+    +value === number ? count1++ : count1;
   });
-  return keyCount;
+  return (count1);
 }
 
-console.log(count('2176491947586100', 1));
+console.log(count1('2176491947586100', 1));
+
+// function count(numbers, key) {
+//   let numbersArr = [];
+//   let keyCount = 0;
+//   for (let i = 0; i < numbers.length; i++) {
+//     numbersArr.push(numbers.charAt(i));
+//   }
+//   numbersArr.forEach((value) => {
+//     if (+value === key) {
+//       ++keyCount;
+//     }
+//   });
+//   return keyCount;
+// }
+
+// console.log(count('2176491947586100', 1));
 
 // -------------------------
 // найти приопущенную букву в массиве:
@@ -73,5 +104,69 @@ function missedLetter(array) {
   }
 }
 
-console.log(missedLetter(arrayLetters))
+console.log(missedLetter(arrayLetters));
 
+// сложить цифры числа:
+
+//   sumDigits(10);  // Returns 1
+//   sumDigits(99);  // Returns 18
+//   sumDigits(-32); // Returns 5
+
+//Считает без учета минуса
+
+function sumDigits1(numbers) {
+  numbers = String(numbers).split('');
+
+  numbers[0] === '-' ? numbers.splice(0, 1) : numbers;
+
+  numbers = numbers.reduce((acc, value) => +acc + +value);
+  return numbers;
+}
+
+console.log(sumDigits1(-32));
+
+//Считает с учетом минуса
+
+function sumDigits(numbers) {
+  numbers = String(numbers).split('');
+
+  if (numbers[0] === '-') {
+    let number = numbers[0] + numbers[1];
+    numbers.splice(0, 2, number);
+  }
+  let arr = [];
+  numbers.forEach((value) => {
+    arr.push(+value);
+  });
+
+  arr = arr.reduce((acc, value) => acc + value);
+  return arr;
+}
+
+console.log(sumDigits(-32));
+
+// Проверьте, имеет ли строка одинаковое количество "" x "" и "" o "". Метод должен возвращать логическое значение и быть нечувствительным к регистру. Строка может содержать любые символы.
+
+// XO("ooxx") => true
+// XO("xooxx") => false
+// XO("ooxXm") => true
+// XO("zpzpzpp") => true // потому что нет ни того ни другого
+// XO("zzoo") => false
+
+function compare(string, a, b) {
+  string = string.toUpperCase();
+
+  let arr = string.split('');
+
+  let numberA = 0;
+  let numberB = 0;
+
+  arr.forEach((value) => {
+    value === a ? numberA++ : numberA;
+    value === b ? numberB++ : numberB;
+  });
+
+  return console.log(numberA === numberB);
+}
+
+compare('zzoo', 'X', 'O');
