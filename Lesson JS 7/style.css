@@ -1,0 +1,11 @@
+.hidden {
+  display: none;
+}
+
+.btnMenu, .btnForms {
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}

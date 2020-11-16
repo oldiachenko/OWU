@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form name="formAge">
+      <input type="number" , name="age" , style="margin-bottom: 30px" />;
+      <button id="btnAge">OK</button>
+    </form>
+
+    <button class="btnMenu">Show menu</button>
+    <menu id="menu" , class="hidden">
+      <li>1 пункт</li>
+      <li>2 пункт</li>
+      <li>3 пункт</li>
+      <li>4 пункт</li>
+      <li>5 пункт</li>
+    </menu>
+
+    <form action="" id="form1">
+      <input type="text" , name="input1" />
+      <input type="text" , name="input2" />
+    </form>
+
+    <form action="" id="form2">
+      <input type="text" , name="input1" />
+      <input type="text" , name="input2" />
+    </form>
+
+    <button class="btnForms">Text from Forms to Console</button>
+
+    <form action="" id="form3">
+      <p>Введите количество рядов</p>
+      <input type="text" name="rowNumber" />
+      <p>Введите количество строк</p>
+      <input type="text" name="cellNumber" />
+      <p>Введите содержание</p>
+      <input type="text" name="content" />
+      <br />
+      <input type="submit" name="submit" value="OK" />
+    </form>
+
+    <div id="tableDiv"></div>
+
+    <div id="carousel"></div>
+
+    <form action="" id="form4">
+      <input type="text" name="" id="words" />
+      <input type="submit" name="" id="submitWords" value="Check" />
+    </form>
+    <br />
+    <form action="" id="form5">
+      <input type="text" name="" id="sentence" />
+      <input type="submit" name="" id="submitSent" value="Check" />
+    </form>
+    
+<button id='btnFilter'>Filter</button>
+<form action="" id="form6">
+  <input type="checkbox" name='false'>
+  <label for="false">Users with status false</label>
+  <br>
+   <input type="checkbox" name='age'>
+  <label for="age">Users older 29</label>
+  <br>
+   <input type="checkbox" name='city'>
+  <label for="city">Users from Kyiv</label>
+  <div id='result'></div>
+</form>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
