@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+    <br />
+    <br />
+
+    <form action="" id="form" oninput="saveToLS(this)">
+      <input type="text" id="input1" />
+      <br />
+      <input type="number" , id="input2" />
+      <br />
+      <textarea id="text" cols="30" rows="4"></textarea>
+      <br />
+      <input type="checkbox" id="check1" value="false" />
+      <input type="checkbox" id="check2" value="false" />
+      <br />
+      <input type="radio" name="radio" id="radio1" value="false" />
+      <input type="radio" name="radio" id="radio2" value="false" />
+      <select id="select">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </form>
+    <br />
+    <br />
+
+    <div>
+      <button id="btn_left">Left</button>
+      <button id="btn_right">Right</button>
+    </div>
+
+    <form action="" id="form1">
+      <textarea name="" id="text1" cols="30" rows="10"></textarea>
+      <button id="btnSave">Save</button>
+    </form>
+  
+    <form action="" id="form2">
+      <input type="text" name="" id="fio" />
+      <label for="fio">ФИО</label>
+      <br />
+      <br />
+      <input type="tel" name="" id="tel" />
+      <label for="tel">Номер телефона</label>
+      <br />
+      <br />
+      <input type="text" name="" id="company" />
+      <label for="company">Фирма</label>
+      <br />
+      <br />
+      <input type="text" name="" id="dep" />
+      <label for="dep">Отдел</label>
+      <br />
+      <br />
+      <input type="date" name="" id="bd" />
+      <label for="bd">День рождения</label>
+      <br>
+      <br> 
+      <input type="submit" name="" id="submit">
+    </form>
+
+    <div id='card'></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
