@@ -22,7 +22,7 @@
 //     cb(null, `Доброго ранку! ${time} година`);
 //   }, 500);
 // }
-
+//
 // function bath(water, cb) {
 //   setTimeout(() => {
 //     if (!water) {
@@ -32,7 +32,7 @@
 //     cb(null, 'Приймаю душ');
 //   }, 1000);
 // }
-
+//
 // function breakfast(food, cb) {
 //   setTimeout(() => {
 //     if (!food) {
@@ -42,19 +42,21 @@
 //     cb(null, `Їм ${food}`);
 //   }, 800);
 // }
-
+//
 // function transport(money, cb) {
 //   setTimeout(() => {
 //     if (money < 8) {
 //       cb('Сиди вдома');
 //       return;
-//     } else if (money < 100) {
+//     }
+//     if (money < 100) {
 //       cb(null, 'Їдеш на маршрутці');
 //       return;
-//     } else cb(null, 'Їдеш на таксі');
+//     }
+//     cb(null, 'Їдеш на таксі');
 //   }, 400);
 // }
-
+//
 // function swim(card, cb) {
 //   setTimeout(() => {
 //     if (!card) {
@@ -64,7 +66,7 @@
 //     cb(null, 'Пішли плавати в басейн');
 //   }, 300);
 // }
-
+//
 // function movie(name, cb) {
 //   setTimeout(() => {
 //     if (!name) {
@@ -74,7 +76,7 @@
 //     cb(null, `${name} запросив у кіно`);
 //   }, 1500);
 // }
-
+//
 // function weather(rain, cb) {
 //   setTimeout(() => {
 //     if (!rain) {
@@ -84,7 +86,7 @@
 //     cb('Візьми парасолю');
 //   }, 400);
 // }
-
+//
 // wakeUp(true, 9, (err, data) => {
 //   if (err) {
 //     console.log(err);
@@ -184,9 +186,11 @@ function transport(money) {
     setTimeout(() => {
       if (money < 8) {
         reject('Сиди вдома');
-      } else if (money < 100) {
+      }
+      if (money < 100) {
         resolve('Їдеш на маршрутці');
-      } else resolve('Їдеш на таксі');
+      }
+      resolve('Їдеш на таксі');
     }, 400);
   });
 }
