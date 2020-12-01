@@ -1,0 +1,14 @@
+.target {
+background-color: aquamarine;
+    width: 400px;
+    border: black 1px solid;
+    margin-bottom: 2px;
+}
+
+.point {
+    background-color: beige;
+    width: 400px;
+    border: black 1px solid;
+    margin-bottom: 2px;
+    color: brown;
+}

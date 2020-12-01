@@ -20,7 +20,8 @@ let div = document.getElementsByClassName('div')[0];
 
 let text = 'Hello World';
 
-let arr = Array.from(text);
+let arr = text.split('');
+
 
 function print(array, i = 0) {
   return new Promise(() => {

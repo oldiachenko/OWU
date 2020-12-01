@@ -228,41 +228,41 @@ function weather(rain) {
   });
 }
 
-// wakeUp(true, 7)
-//   .then((value) => {
-//     console.log(value);
-//     return bath(true);
-//   })
-//   .then((value) => {
-//     console.log(value);
-//     return breakfast('яйце');
-//   })
-//   .then((value) => {
-//     console.log(value);
-//     return transport(10);
-//   })
-//   .then((value) => {
-//     console.log(value);
-//     return swim(true);
-//   })
-//   .then((value) => {
-//     console.log(value);
-//     return movie('Anton');
-//   })
-//   .then((value) => {
-//     console.log(value);
-//     return weather(false);
-//   })
-//   .then((value) => {
-//     console.log(value);
-//     return transport(150);
-//   })
-//   .then((value) => {
-//     console.log(value);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+wakeUp(true, 7)
+  .then((value) => {
+    console.log(value);
+    return bath(true);
+  })
+  .then((value) => {
+    console.log(value);
+    return breakfast('яйце');
+  })
+  .then((value) => {
+    console.log(value);
+    return transport(10);
+  })
+  .then((value) => {
+    console.log(value);
+    return swim(true);
+  })
+  .then((value) => {
+    console.log(value);
+    return movie('Anton');
+  })
+  .then((value) => {
+    console.log(value);
+    return weather(false);
+  })
+  .then((value) => {
+    console.log(value);
+    return transport(150);
+  })
+  .then((value) => {
+    console.log(value);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 async function day() {
   try {
